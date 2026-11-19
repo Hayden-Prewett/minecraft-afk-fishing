@@ -5,12 +5,13 @@ A python script that detects when a fish is caught in Minecraft and reels it in.
 1. Download the executable or python script
 2. Open your world
 3. Turn on closed captions / subtitles
-4. Set up your fishing rod. For maximum results, use these enchantments:
+4. Get a fishing rod. For maximum results, use these enchantments:
 - Mending (Otherwise your rod will break)
 - Unbreaking III
 - Luck of the Sea III (ideal for faster results)
 - Lure III
-4. Start the python script or executable. Then do not touch your mouse.
+5. Equip your fishing rod. Do not cast it.
+6. Start the python script or executable. Then do not touch your mouse.
 
 If this does not work, please create an issue in the GitHub repository and state your setup (OS, minecraft version, etc)
 
