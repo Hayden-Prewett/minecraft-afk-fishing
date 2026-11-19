@@ -1,7 +1,7 @@
 # AFK Fishing Script for Minecraft
 A python script that detects when a fish is caught in Minecraft and reels it in. The process repeats, allowing you to AFK farm fishing.
 
-# Instructions
+## Instructions
 1. Download the executable or python script
 2. Open your world
 3. Turn on closed captions / subtitles
@@ -12,4 +12,4 @@ A python script that detects when a fish is caught in Minecraft and reels it in.
 - Lure III
 4. Start the python script or executable. Then do not touch your mouse.
 
-# How it works
+## How it works
