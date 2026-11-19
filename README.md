@@ -16,3 +16,4 @@ A python script that detects when a fish is caught in Minecraft and reels it in.
 If this does not work, please create an issue in the GitHub repository and state your setup (OS, minecraft version, etc)
 
 ## How it works
+The python script captures the screen and reads the captions. It looks for "fishing bobber splashes" and right clicks to reel in. Then it right clicks again to cast. This loops until the application is closed.
