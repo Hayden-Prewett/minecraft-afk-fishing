@@ -6,8 +6,6 @@ import pytesseract
 import cv2
 from PIL import ImageGrab
 
-#pydirectinput.click(button="right")
-
 def getTextFromScreen():
     # Path of tesseract executable
     pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
@@ -18,13 +16,29 @@ def getTextFromScreen():
 
     # Convert the image to monochrome for it to be easily 
     # read by the OCR.
-    tesstr = pytesseract.image_to_string(
+    screen_text = pytesseract.image_to_string(
             cv2.cvtColor(nm.array(cap), cv2.COLOR_BGR2GRAY), 
             lang ='eng')
 
     # Output result to the console for testing purposes
-    print(tesstr)
+    print(screen_text)
+    return screen_text
+
+
+def search_for_bob(screen_text):
+    # Searches the given data for the subtitle that represents the fishing rod bobbing down
+    bob_string = "fishing bobber splashes"
+    screen_text = screen_text.lower()
+
+    if bob_string in screen_text:
+        # Right click to reel in
+        pydirectinput.click(button="right")
+        # Because of the timing, the right click is pressed immediately afterwards too
+        #  this casts the rod again.
 
 
 time.sleep(10)
-getTextFromScreen()
+pydirectinput.click(button="right") # first cast
+while True:
+    screen_text = getTextFromScreen()
+    search_for_bob(screen_text)
