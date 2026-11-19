@@ -11,7 +11,7 @@ A python script that detects when a fish is caught in Minecraft and reels it in.
 - Luck of the Sea III (ideal for faster results)
 - Lure III
 5. Equip your fishing rod. Do not cast it.
-6. Start the python script or executable and switch to the full screen minecraft.
+6. Start the python script or executable and switch to the full screen minecraft within 10 seconds.
 
 If this does not work, please create an issue in the GitHub repository and state your setup (OS, minecraft version, etc)
 
