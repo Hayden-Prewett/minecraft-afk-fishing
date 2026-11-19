@@ -33,8 +33,8 @@ def search_for_bob(screen_text):
     if bob_string in screen_text:
         # Right click to reel in
         pydirectinput.click(button="right")
-        # Because of the timing, the right click is pressed immediately afterwards too
-        #  this casts the rod again.
+        time.sleep(0.5) # Delay before casting rod again
+        pydirectinput.click(button="right")
 
 
 time.sleep(10)
