@@ -1,4 +1,5 @@
 # Approach 1: Using subtitles
+# version: v0.1
 import pydirectinput
 import time
 import numpy as nm
@@ -33,7 +34,7 @@ def search_for_bob(screen_text):
     if bob_string in screen_text:
         # Right click to reel in
         pydirectinput.click(button="right")
-        time.sleep(0.5) # Delay before casting rod again
+        time.sleep(1.5) # Delay before casting rod again
         pydirectinput.click(button="right")
 
 
