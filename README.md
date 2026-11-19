@@ -12,4 +12,6 @@ A python script that detects when a fish is caught in Minecraft and reels it in.
 - Lure III
 4. Start the python script or executable. Then do not touch your mouse.
 
+If this does not work, please create an issue in the GitHub repository and state your setup (OS, minecraft version, etc)
+
 ## How it works
